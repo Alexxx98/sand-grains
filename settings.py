@@ -1,0 +1,7 @@
+WIDTH = 600
+HEIGHT = 800
+
+FPS = 60
+
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
