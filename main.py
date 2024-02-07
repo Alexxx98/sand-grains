@@ -59,7 +59,7 @@ def main():
     pygame.quit()
 
 
-def get_grid():
+def get_grid() -> list:
     nodes = []
     node_width = 5
     node_height = 5
@@ -74,20 +74,13 @@ def get_grid():
     return nodes
 
 
-def draw_grid(nodes):
+def draw_grid(nodes: list) -> None:
     for row in nodes:
         for node in row:
             pygame.draw.rect(
                 WINDOW, node.grain, pygame.Rect(node.x, node.y, node.width, node.height)
             )
 
-    pygame.display.flip()
-
-
-def draw_node(node):
-    pygame.draw.rect(
-        WINDOW, node.grain, pygame.Rect(node.x, node.y, node.width, node.height)
-    )
     pygame.display.flip()
 
 
